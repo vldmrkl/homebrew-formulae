@@ -4,9 +4,10 @@ class AirdropCli < Formula
   url "https://github.com/vldmrkl/airdrop-cli/archive/1.0.1.tar.gz"
   sha256 "2e93796692fddb13e362bfd9c204bfc2f24ef22fadaf09efe97201d0bc9b54c3"
   license "MIT"
-  head "https://github.com/vldmrkl/airdrop-cli.git"
+  head "https://github.com/vldmrkl/airdrop-cli.git" :branch => "main"
   version "1.0.1"
   depends_on xcode: "11.4"
+
 
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
